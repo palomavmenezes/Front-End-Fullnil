@@ -1,0 +1,531 @@
+/*
+** CSS do Dashboard Fullnil
+** Desenvolvido por Data Cartês
+** Desenvolvedor(a): Paloma Menezes
+** Versão 1.0
+** URI: https://datacartes.com.br
+*/
+
+body {
+    padding: 0;
+    font-family: "Archivo-Regular" !important;
+}
+
+h1 { font-size: 45px !important; }
+h2 { font-size: 32px !important; }
+h3 { font-size: 27px !important; }
+h4 { font-size: 25px !important; }
+h5 { font-size: 22px !important; }
+h6 { font-size: 18px !important; }
+p { font-size: 14px }
+span { font-size: 14px }
+
+h1, h2, h3, h4, h5, h6, p, span {
+    font-family: "Archivo-Regular" !important; 
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Carregando Fontes Externas */
+@font-face {
+    font-family: "Archivo-Regular";
+    src: url(fonts/Archivo-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Archivo-Medium";
+    src: url(fonts/Archivo-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Archivo-SemiBold";
+    src: url(fonts/Archivo-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: "Archivo-Bold";
+    src: url(fonts/Archivo-Bold.ttf);
+}
+
+.concluido h6 {
+	color: #39B44A;
+}
+
+.concluido p {
+	color: #19962A;
+}
+
+.news-leads {
+
+}
+
+.contacts {
+
+}
+
+.proposals-sent {
+
+}
+
+/* Sidebar CSS */
+#sidebar-wrapper {
+width: 108px;
+min-height: 100vh;
+margin-left: -15rem;
+background: #FFFFFF 0% 0% no-repeat padding-box;
+-webkit-transition: margin .25s ease-out;
+-moz-transition: margin .25s ease-out;
+-o-transition: margin .25s ease-out;
+transition: margin .25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+padding: 0.875rem 1.25rem;
+text-align: -webkit-center;
+margin-top: 15px;
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+.list-group {
+    margin-top: 15px;
+}
+
+.list-group-item {
+	border: 0 !important;
+	color: #216CDD !important;
+	font-weight: 500;
+    font-size: 15px;
+    padding: .75rem 0.5rem .75rem 0.8rem !important;
+    font-family: "Archivo-SemiBold";
+    text-align: center !important;
+}
+
+.list-group-item-action:focus, .list-group-item-action:hover {
+	color: #064099 !important;
+    background: #EBF3FF 0% 0% no-repeat padding-box !important;
+    border-right: 2px solid #064099 !important;
+}
+.list-group-item.active {
+	color: #064099 !important;
+	background: #EBF3FF 0% 0% no-repeat padding-box !important;
+	border-right: 2px solid #064099 !important;
+}
+
+.list-group-item-action:active {
+	color: #064099 !important;
+    background: #EBF3FF 0% 0% no-repeat padding-box !important;
+	border-right: 2px solid #064099 !important;
+}
+
+i.fa {
+    font-size: 27px;
+    margin-bottom: 5px;
+}
+
+/* Responsividade Sidebar CSS */
+
+@media (min-width: 768px) {
+#sidebar-wrapper {
+margin-left: 0;
+}
+
+#page-content-wrapper {
+min-width: 0;
+width: 100%;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+margin-left: -15rem;
+} }
+
+
+/* CSS da área do Cliente */
+
+/*Declaração inicial*/
+
+.col-xs-15,
+.col-sm-15,
+.col-md-15,
+.col-lg-15 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+/*Medias queries */
+
+.col-xs-15 {
+    width: 21.2%;
+    float: left;
+}
+@media (min-width: 768px) {
+.col-sm-15 {
+        width: 21.2%;
+        float: left;
+    }
+}
+@media (min-width: 992px) {
+    .col-md-15 {
+        width: 21.2%;
+        float: left;
+    }
+}
+@media (min-width: 1200px) {
+    .col-lg-15 {
+        width: 21.2%;
+        float: left;
+    }
+}
+
+@media (max-width: 620px) {
+    .col-sm-15 {
+        width: 100%;
+    }
+
+    #col-right {
+    width: 90% !important;
+    float: none;
+    position: relative !important;
+    top: auto !important;
+    left: 0 !important;
+    margin: 0 20px;
+
+	}
+}
+
+
+#col-right {
+    width: 100%;
+    float: left;
+    position: fixed;
+    left: 120px;
+    top: 25px;
+    height: 100%;
+    overflow: auto !important;
+}
+
+.box {
+    background:white;
+    margin:10px;
+    padding:20px;
+    border-radius:20px;
+    -webkit-box-shadow: 0px 0px 10px #00000029;
+    -moz-box-shadow: 0px 0px 10px #00000029;
+    box-shadow: 0px 0px 10px #00000029;
+    height: 444px;
+    border:5px solid white;
+    overflow: auto;
+}
+
+.card{
+	border-radius: 10px;
+    margin:10px 0px 10px 0px;
+    padding:10px;
+    width:auto;
+    -webkit-box-shadow: 0px 0px 10px #0000001A;
+    -moz-box-shadow: 0px 0px 10px #0000001A;
+    box-shadow: 0px 0px 10px #0000001A;
+}
+
+.profile {
+    margin: 5px 0px 20px;
+}
+
+.profile h2, .profile h4 {
+    width: auto;
+    float: left;
+}
+
+.profile h2 {
+    color: #003A91;
+    font-weight: 900;
+}
+
+.profile h4 {
+	color: #216CDD;
+    margin-top: 6px !important;
+    margin-left: 5px !important;
+}
+
+ul.top-card {
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+}
+
+.top-card i.fa.fa-trash {
+    font-size: 17px;
+    background: #002968 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    color: #fff;
+    padding: 2px;
+    margin-left: 0;
+}
+
+.no-padding {
+	padding: 0 !important;
+}
+
+.leads {
+	color: #002968;
+	font-weight: bold;
+	margin-left: 10px;
+}
+
+.leads h6 {
+    margin-right: 10px !important;
+    font-size: 16px !important;
+    font-weight: 900;
+}
+
+.leads p {
+    background: #002968 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    color: #fff;
+    width: 100%;
+    height: 20px;
+    margin-right: 10px !important;
+    text-align: center;
+}
+
+.new-lead {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+ul li {
+	display: block;
+}
+
+.card h6 {
+    font-weight: bold;
+}
+
+.card p {
+    letter-spacing: 0;
+color: #232323;
+}
+
+.img-leads {
+    background: #003A91 0% 0% no-repeat padding-box;
+    height: 70px;
+    border-radius: 7px;
+    margin-left: 5px;
+    max-width: 28.333333% !important;
+    margin-bottom: 15px;
+}
+
+/* CSS Card Contato */
+i.fa-contato {
+    background: #064099 0% 0% no-repeat padding-box;
+    margin-left: 10px !important;
+}
+
+.img-contato {
+    background: #216CDD 0% 0% no-repeat padding-box;
+    height: 70px;
+    border-radius: 7px;
+    margin-left: 5px;
+    max-width: 28.333333% !important;
+    margin-bottom: 15px;
+}
+
+.contato {
+    color: #064099;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.contato h6 {
+    margin-right: 10px !important;
+    font-size: 16px !important;
+    font-weight: 900;
+}
+
+.contato p {
+    text-align: center;
+    width: 100%;
+    height: 20px;
+    background: #064099 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    color: #fff;
+    margin-right: 10px !important;
+}
+
+/* CSS Card Propostas Enviadas */
+i.fa-propostas {
+    background: #216CDD 0% 0% no-repeat padding-box !important;
+    margin-left: 10px !important;
+}
+
+.img-propostas{
+    background: #397BDD 0% 0% no-repeat padding-box;
+    height: 70px;
+    border-radius: 7px;
+    margin-left: 5px;
+    max-width: 28.333333% !important;
+}
+
+.propostas {
+    color: #397BDD;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.propostas h6 {
+    margin-right: 10px !important;
+    font-size: 16px !important;
+    font-weight: 900;
+}
+
+.propostas p {
+    text-align: center;
+    width: 100%;
+    height: 20px;
+    background: #216CDD 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    color: #fff;
+    margin-right: 10px !important;
+}
+
+.value-proposta-left {
+    text-align: center;
+    background: #5A9BFC 0% 0% no-repeat padding-box;
+    border-radius: 0px 0px 0px 10px;
+    margin-top: 10px;
+    color: #fff;
+    font-size: 12px;
+    padding: 5px 0px;
+}
+
+.value-proposta-right {
+    text-align: center;
+    background: #397BDD 0% 0% no-repeat padding-box;
+    border-radius: 0px 0px 10px 0px;
+    margin-top: 10px;
+    color: #fff;
+    font-size: 12px;
+    padding: 5px 0px;
+}
+
+/* CSS Card Em Negociação */
+i.fa-em-negociacao {
+    background: #397BDD 0% 0% no-repeat padding-box !important;
+    margin-left: 10px !important;
+}
+
+.img-em-negociacao {
+    background: #5A9BFC 0% 0% no-repeat padding-box;
+    height: 70px;
+    border-radius: 7px;
+    margin-left: 5px;
+    max-width: 28.333333% !important;
+}
+
+.em-negociacao {
+    color: #397BDD;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.em-negociacao h6 {
+    margin-right: 10px !important;
+    font-size: 16px !important;
+    font-weight: 900;
+}
+
+.em-negociacao p {
+    text-align: center;
+    width: 100%;
+    height: 20px;
+    background: #397BDD 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    color: #fff;
+    margin-right: 10px !important;
+}
+
+.value-negociacao-left {
+    text-align: center;
+    background: #89B8FF 0% 0% no-repeat padding-box;
+    border-radius: 0px 0px 0px 10px;
+    margin-top: 10px;
+    color: #fff;
+    font-size: 12px;
+    padding: 5px 0px;
+}
+
+.value-negociacao-right {
+    text-align: center;
+    background: #5A9BFC 0% 0% no-repeat padding-box;
+    border-radius: 0px 0px 10px 0px;
+    margin-top: 10px;
+    color: #fff;
+    font-size: 12px;
+    padding: 5px 0px;
+}
+
+.entire-card {
+    box-shadow: 0px 0px 10px #00000030;
+    border-radius: 10px;
+    padding: 15px 0 0;
+    margin: 5px 5px;
+}
+
+/* CSS da tabela de contatos */
+td {
+    background: #F5F5F5 0% 0% no-repeat padding-box;
+    padding: 5px 11px;
+    border-bottom: 5px solid #fff;
+    font-family: "Archivo-Medium";
+    font-size: 15.2px;
+    width: 100%;
+    white-space: nowrap;
+}
+
+th {
+    font-size: 15.2px;
+    text-align: left;
+    letter-spacing: 0;
+    color: #6E6E6E;
+    padding: 5px 11px;
+    background: #efefef 0% 0% no-repeat padding-box;
+    border-bottom: 5px solid #fff;
+    font-family: "Archivo-Bold";
+    width: 100%;
+    white-space: nowrap;
+}
+
+.fa-calendar {
+    font-size: 18px !important;
+    color: #000000;
+}
+
+th.btn-search {
+    max-width: 150px;
+}
+
+input[type="search"] {
+    width: 110px;
+}
+
+.tables-contact th {
+    background: #fff;
+}
+
+.detals-leads {
+    box-shadow: 0px 0px 10px #00000033;
+    border-radius: 20px;
+    padding: 20px 0;
+    width: 89.4%;
+    margin-left: 10px !important;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
